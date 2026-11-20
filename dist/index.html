@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fcfaf4">
+  <meta name="description" content="A tiny matcha-and-lilies adventure, made with love for Noor.">
+  <title>Noor's little happy place</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'%3E%3Ctext y='39' font-size='40'%3E%F0%9F%92%8C%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="game.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="sprite lily" aria-hidden="true"></span><span>for Noor, with love</span></div>
+    <div class="utilities">
+      <button class="hug" id="hug" aria-label="A little hug"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6c-2.3-2.2-5.6-1.7-8.8 1.6C8.8 2.9 5.5 2.4 3.2 4.6c-2.8 2.8-.4 7.6 8.8 14.8C21.2 12.2 23.6 7.4 20.8 4.6Z"/></svg><span>a little hug</span></button>
+      <span class="utility-divider" aria-hidden="true"></span>
+      <button class="sound" id="sound" aria-label="Turn sound on" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m11 4-6 5H2v6h3l6 5V4Z"/><path class="sound-waves" d="M15 8c2 2 2 6 0 8m3-11c4 4 4 10 0 14"/><path class="sound-slash" d="m16 9 5 6m0-6-5 6"/></svg><span class="sr-only">Sound</span></button>
+    </div>
+  </header>
+  <main>
+    <div class="intro-heading">
+      <h1>Your little happy place.</h1>
+      <p class="tagline"><span aria-hidden="true"></span>a matcha made in heaven.<span aria-hidden="true"></span></p>
+      <p class="dedication">A tiny adventure, made by your favorite person.</p>
+    </div>
+    <ol class="journey" aria-label="Your little adventure">
+      <li id="step-1" aria-current="step"><span class="step-dot"></span><span>1. Matcha</span></li>
+      <li id="step-2"><span class="step-dot"></span><span>2. Lilies</span></li>
+      <li id="step-3"><span class="step-dot"></span><span>3. A little letter</span></li>
+    </ol>
+    <section class="stage" id="stage" aria-label="Noor's matcha garden">
+      <div id="screen" class="screen"></div>
+      <noscript><p class="noscript">This little adventure needs JavaScript. Please enable it to play.</p></noscript>
+    </section>
+    <div class="legend" id="legend"><span><i class="sprite matcha" aria-hidden="true"></i>Matcha = yes please</span><span class="legend-divider" aria-hidden="true"></span><span><i class="sprite ginger" aria-hidden="true"></i>Ginger = absolutely not</span></div>
+    <footer>p.s. your favorite person is still funnier. <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20C-3 0 9-3 11 9 18-4 28 3 5 20Z"/></svg></footer>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="confetti" id="confetti" aria-hidden="true"></div>
+</body>
+</html>
